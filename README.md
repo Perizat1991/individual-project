@@ -1,5 +1,29 @@
-# individual-project
-## продажа lookов со скидкой
-## платформа для продажи одежды со скидкой в формате луков в определенном стиле, для определенного случая
-* объединяет магазины по продаже одежды со всего города, которые могут зарегистрироваться на сайте и выкладывать свой товар в виде лука, для его дальнейшей продажи.
+# tmp
 
+## Project setup
+```
+yarn install
+```
+
+### Compiles and hot-reloads for development
+```
+yarn run serve
+```
+
+### Compiles and minifies for production
+```
+yarn run build
+```
+
+### Run your tests
+```
+yarn run test
+```
+
+### Lints and fixes files
+```
+yarn run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
