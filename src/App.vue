@@ -1,22 +1,25 @@
 <template>
   <div id="app">
-   <Header />
-    <router-view />
+  <div class="content"><router-view /></div>
+  <Footer />
   </div>
 </template>
 
 <script>
 
-import Header from './components/header/Header'
+
+import Footer from './components/Footer'
 export default {
   name: 'app',
   components: {
-    Header
+  
+    Footer
   }
 }
 
 </script>
 
 <style lang="sass">
-
+  .content 
+    height: fit-content
 </style>
