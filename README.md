@@ -1,4 +1,4 @@
-# tmp
+# QuickLook.kg
 
 ## Project setup
 ```
