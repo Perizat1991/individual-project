@@ -1,21 +1,17 @@
 <template>
     
-        <div class="container-fluid">
+        <div class="avaPage container-fluid">
             <div class="avaContainer">
                 <div class="avatar-flip" style="box-shadow: 2px 2px 20px #17a2b8">
-                    <img src="https://scontent.ffru2-1.fna.fbcdn.net/v/t1.0-9/41080592_1780732908691040_4160809830686130176_n.jpg?_nc_cat=107&_nc_ht=scontent.ffru2-1.fna&oh=0512f140d632c9935ccd106e7792c100&oe=5D416C01" height="150" width="150">
-                    <img src="https://karos.info/wp-content/uploads/2018/10/high-quality-car-photos.jpg" height="150" width="150">
+                    <img src="../pics/slider/three.jpg" height="500" width="500">
+                    <img src="../pics/slider/street.jpg" height="200" width="200">
                 </div>
                 <h4>cosmobella.kg</h4>
                 <h3 class="name">Cosmobella</h3>
                 <h5 class="phoneNum">Тел: 0555179068</h5>
             <!--Facebook-->
                 <a class="fb-ic mr-3" href="https://www.facebook.com/pmaatkurbanova" role="button"><i class="fab fa-lg fa-facebook-f"></i></a>
-            <!--Whatsapp-->
-                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-                <a href="https://api.whatsapp.com/send?phone=51955081075&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="float" target="_blank">
-                  <i class="fa fa-whatsapp my-float"></i>
-                </a>
+           
             <!--Instagram-->
                 <a class="ins-ic mr-3" href="https://www.instagram.com/perismeris/?hl=ru" role="button"><i class="fab fa-lg fa-instagram"></i></a>
                     <div class="buttons">
@@ -36,16 +32,18 @@ export default {
 </script>
 
 <style>
-
+  .avaPage {
+     background-image: url(../pics/slider/profback.jpg);
+  }
   .container-fluid {
-    /* background-image: url(../pics/slider/profback.jpg); */
-    background-size: 1400px
+   
+    background-size: 1500px;
+    padding-top: 100px;
   }
     .avaContainer {
     width: 500px;
     margin: 50px auto 50px;
-    background-color: #fff;
-    /* margin-top: 200px; */
+    background-color: pink;
     padding: 0 20px 20px;
     border-radius: 6px;
     -webkit-border-radius: 6px;
@@ -79,12 +77,13 @@ export default {
     box-shadow: 0 0 0 13px #f0f0f0;
     -webkit-box-shadow: 0 0 0 13px #f0f0f0;
     -moz-box-shadow: 0 0 0 13px #f0f0f0;
+    
   }
   .avatar-flip img {
     position: absolute;
     left: 0;
     top: 0;
-    border-radius: 100px;
+    border-radius: 200px;
     transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -121,4 +120,5 @@ export default {
   .card_container {
     display: flex
   }
+
 </style>

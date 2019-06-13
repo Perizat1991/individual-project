@@ -1,9 +1,9 @@
 <template>
-    <header  id="cssmenu">
+    <nav  id="cssmenu" class="navbar navbar-expand-lg">
         <router-link to="/" class="logo"><img src="https://img.icons8.com/ultraviolet/40/000000/hanger.png">QuickLook.kg</router-link>
-            <!-- <li class='active has-sub'><a href='#'><span>Виды луков</span></a> -->
-                <!-- <ul class="looks"> -->
-                    <li class='active has-sub'><router-link to='#' class="links"><span>Женские луки</span></router-link>
+
+                <div class="collapse navbar-collapse" id="navbar1">
+                    <li class='active has-sub '><router-link to='/woman' class="links"><span>Женские луки</span></router-link>
                         <ul class="looks">
                             <li class="myLooks"><router-link to='#' class="links"><span>Вечерние луки</span></router-link></li>
                             <li class="myLooks"><router-link to='#' class="links"><span>Офисные луки</span></router-link></li>
@@ -14,7 +14,9 @@
                     <li class='active has-sub'><router-link to='#' class="links"><span>Мужские луки</span></router-link>
                         <ul class="looks">
                             <li class="myLooks"><router-link to='#' class="links"><span>Вечерние луки</span></router-link></li>
-                            <li class='myLooks last'><router-link to='#' class="links"><span>Офисные луки</span></router-link></li>
+                            <li class='myLooks'><router-link to='#' class="links"><span>Офисные луки</span></router-link></li>
+                            <li class="myLooks"><router-link to='#' class="links"><span>Спортивные луки</span></router-link></li>
+                            <li class='myLooks last'><router-link to='#' class="links"><span>Street style луки</span></router-link></li>
                         </ul>
                     </li>
                     <li class='active has-sub'><router-link to='#' class="links"><span>Сезонные луки</span></router-link>
@@ -23,20 +25,20 @@
                             <li class='myLooks last'><router-link to='#' class="links"><span>осень-зима</span></router-link></li>
                         </ul>
                     </li>
-                <!-- </ul> -->
-            <!-- </li> -->
-         <router-link class="sign " to="/shops" v-b-tooltip.hover title="Чьи луки вы здесь найдете"><i class="fas fa-shopping-bag"></i>
-            Магазины-партнеры
-        </router-link>
 
-        <router-link class="sign" to="/signup" v-b-tooltip.hover title="Только для магазинов"><i class="fas fa-registered"></i>
-            Регистрация
-        </router-link>
+                <router-link class="sign " to="/shops" v-b-tooltip.hover title="Чьи луки вы здесь найдете"><i class="fas fa-shopping-bag"></i>
+                Магазины-партнеры
+                </router-link>
 
-        <router-link class="sign " to="/login" v-b-tooltip.hover title="Только для магазинов"><i class="fas fa-user-circle"></i>
-            Войти
-        </router-link>
-    </header>
+                <router-link class="sign" to="/signup" v-b-tooltip.hover title="Только для магазинов"><i class="fas fa-registered"></i>
+                    Регистрация
+                </router-link>
+
+                <router-link class="sign " to="/login" v-b-tooltip.hover title="Только для магазинов"><i class="fas fa-user-circle"></i>
+                    Войти
+                </router-link>
+         </div>
+    </nav>
 </template>
 
 <script>
@@ -158,18 +160,18 @@ import axios from 'axios'
     color: white;
     }
     .myLooks .links {
-    color: #333333;
+    color: white;
     }
     .links {
     display: inline-block;
-    font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     padding: 0 20px;
     text-align: center;
     text-decoration: none;
     }
      .links:hover {
-    background: #f6f6f6;
+    background: black;
     border-radius: 4px 4px 0 0;
     -moz-border-radius: 4px 4px 0 0;
     -webkit-border-radius: 4px 4px 0 0;
@@ -178,9 +180,10 @@ import axios from 'axios'
     -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
     position: relative;
     top: 0;
+    color: palevioletred;
     }
     ul {
-    background: #e5e5e5;
+    background: black;
     border-radius: 5px 5px 0 0;
     -moz-border-radius: 5px 5px 0 0;
     -webkit-border-radius: 5px 5px 0 0;
@@ -189,7 +192,7 @@ import axios from 'axios'
    ul {
     
     background: -moz-linear-gradient(top, #e5e5e5 0%, #dddddd 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e5e5e5), color-stop(100%, #dddddd));
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e5e5e5), color-stop(100%,black));
     background: -webkit-linear-gradient(top, #e5e5e5 0%, #dddddd 100%);
     background: -o-linear-gradient(top, #e5e5e5 0%, #dddddd 100%);
     background: -ms-linear-gradient(top, #e5e5e5 0%, #dddddd 100%);
@@ -206,7 +209,7 @@ import axios from 'axios'
     position: relative;
     }
     #cssmenu > ul > li:hover > .links {
-    background: #f6f6f6;
+    background: black;
     border-radius: 4px 4px 0 0;
     -moz-border-radius: 4px 4px 0 0;
     -webkit-border-radius: 4px 4px 0 0;
@@ -214,6 +217,7 @@ import axios from 'axios'
     -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
     -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
     position: relative;
+    color: palevioletred;
     }
     #cssmenu > ul > li .links {
     line-height: 35px;
@@ -225,6 +229,7 @@ import axios from 'axios'
     }
     .has-sub:hover ul {
     display: block;
+    color: palevioletred;
     }
     .has-sub .links {
     display: block;
@@ -243,7 +248,7 @@ import axios from 'axios'
     -webkit-transform: rotate(360deg);
     }
     .has-sub ul {
-    background: #f6f6f6;
+    background:black;
     border: 1px solid #dddddd;
     border-radius: 5px;
     -moz-border-radius: 5px;
@@ -258,9 +263,9 @@ import axios from 'axios'
     z-index: 1;
     }
      .has-sub ul li:hover > .links {
-    background: #dddddd;
-    color: #ae0001;
-    border-color: #e5e5e5 transparent transparent transparent;
+    background: black;
+    color: palevioletred;
+    border-color: black transparent transparent transparent;
     }
      .has-sub ul .links {
     line-height: 160%;
@@ -271,7 +276,7 @@ import axios from 'axios'
     -webkit-transform: rotate(360deg);
     }
      .has-sub .has-sub ul {
-    background: #dddddd;
+    background: black;
     left: 100%;
     top: 0;
     margin-left: 0;
@@ -289,7 +294,7 @@ import axios from 'axios'
     background-image: none;
     }
    .has-sub .has-sub ul .links:hover {
-    background: #bfbfbf;
+    background: black;
     }
 
 

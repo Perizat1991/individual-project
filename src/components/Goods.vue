@@ -178,7 +178,8 @@ export default {
     display: flex;
     justify-content: center;
     margin-bottom: 40px;
-    flex-wrap: wrap
+    flex-wrap: wrap;
+    background: #ebebeb;
   }
   /* .myTitle {
     font-size: 32px;
@@ -200,7 +201,7 @@ export default {
   .oldPrice {
     text-decoration: line-through red;
     color: darkgrey;
-    font-size: 20px
+    font-size: 18px
   }
   .size {
     margin-top: -10px;
@@ -209,7 +210,8 @@ export default {
   }
   .newPrice {
     margin-left: 60px;
-    font-size: 20px
+    font-size: 18px;
+    font-weight: 900;
   }
   .buttons {
       display: flex;
@@ -218,6 +220,9 @@ export default {
   .btn {
     height: 40px;
     width: 100px
+  }
+  .col-lg-3 {
+    color: purple;
   }
 
 </style>

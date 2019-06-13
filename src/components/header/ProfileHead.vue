@@ -1,7 +1,29 @@
 <template>
-    <header  class="header container-fluid">
-        <router-link to="/" class="logo"><img src="https://img.icons8.com/ultraviolet/40/000000/hanger.png">QuickLook.kg</router-link>
-        <Menu v-for="(item, key) in menu" v-bind:key="key" v-bind:item="item"/>
+    <nav id="cssmenu" class="navbar navbar-expand-lg">
+        <router-link to="/" class="logo"><img src="https://img.icons8.com/ultraviolet/40/000000/hanger.png">QuickLook.kg</router-link>      
+        <li class='active has-sub'><router-link to='#' class="links"><span>Женские луки</span></router-link>
+            <ul class="looks">
+                <li class="myLooks"><router-link to='#' class="links"><span>Вечерние луки</span></router-link></li>
+                <li class="myLooks"><router-link to='#' class="links"><span>Офисные луки</span></router-link></li>
+                <li class="myLooks"><router-link to='#' class="links"><span>Спортивные луки</span></router-link></li>
+                <li class='myLooks last'><router-link to='#' class="links"><span>Street style луки</span></router-link></li>
+            </ul>
+        </li>
+        <li class='active has-sub'><router-link to='#' class="links"><span>Мужские луки</span></router-link>
+            <ul class="looks">
+                <li class="myLooks"><router-link to='#' class="links"><span>Вечерние луки</span></router-link></li>
+                <li class='myLooks'><router-link to='#' class="links"><span>Офисные луки</span></router-link></li>
+                <li class="myLooks"><router-link to='#' class="links"><span>Спортивные луки</span></router-link></li>
+                <li class='myLooks last'><router-link to='#' class="links"><span>Street style луки</span></router-link></li>
+            </ul>
+        </li>
+        <li class='active has-sub'><router-link to='#' class="links"><span>Сезонные луки</span></router-link>
+            <ul class="looks">
+                <li class="myLooks"><router-link to='#' class="links"><span>весна-лето</span></router-link></li>
+                <li class='myLooks last'><router-link to='#' class="links"><span>осень-зима</span></router-link></li>
+            </ul>
+        </li>
+
 
          <router-link class="sign" to="/shops" v-b-tooltip.hover title="Чьи луки вы здесь найдете"><i class="fas fa-shopping-bag"></i>
             Магазины-партнеры
@@ -15,43 +37,15 @@
             Выйти
         </router-link>
         
-    </header>
+    </nav>
 </template>
 
 <script>
 import Menu from './Menu'
     export default {
         name: 'ProfileHeader',
-        components: {
-            Menu
-        },
-        data(){
-            return {
-                menu: [
-                    {title: 'Женские луки', className: 'girls', items: [
-                        { title: 'Вечерние луки', link: '/_look' },
-                        { title: 'Офисные луки', link: '/_look' },
-                        { title: 'Спортивные луки', link: '/_look' },
-                        { title: 'Street style луки', link: '/_look' },
-                        { title: 'Сезонные луки', link: '/_look', nested: [
-                            {name: 'весна-лето', link: '/_look/_summer', color: '#3FD227'},
-                            {name: 'осень-зима', link: '/_look/_winter', color: '#21F5DC'}
-                        ]},
-                    ]},
-                    {title: 'Мужские луки', className: 'boys', items: [
-                        { title: 'Вечерние луки', link: '/_look' },
-                        { title: 'Офисные луки', link: '/_look' },
-                        { title: 'Спортивные луки', link: '/_look' },
-                        { title: 'Street style луки', link: '/_look' },
-                        { title: 'Сезонные луки', link: '/_look', nested: [
-                            {name: 'весна-лето', link: '/_look/_summer', color: '#3FD227'},     
-                            {name: 'осень-зима', link: '/_look/_winter', color: '#21F5DC'}
-                        ]},
-                    ]},
-                    
-                ]
-            }
-        }
+        
+        
     }
     
 </script>

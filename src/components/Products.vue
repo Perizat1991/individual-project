@@ -6,7 +6,7 @@
 					<img src="../pics/night-look/4-night.jpg"/>
 					<figcaption>
 						<h2><span>Вечерние </span> луки</h2>
-						<p>Sadie never took her eyes off me. <br>She had a dark soul.</p>
+						<p>Выберите прекрасный вечерний образ</p>
 						<a href="#">View more</a>
 					</figcaption>			
 				</figure>
@@ -14,7 +14,7 @@
 					<img src="../pics/man/2-man.jpg"/>
 					<figcaption>
 						<h2><span>Офисные </span> луки</h2>
-						<p>Sadie never took her eyes off me. <br>She had a dark soul.</p>
+						<p>Офисная одежда может быть гораздо интереснее чем кажется</p>
 						<a href="#">View more</a>
 					</figcaption>			
 				</figure>
@@ -24,7 +24,7 @@
 					<img src="../pics/everyday-look/2-street.jpg"/>
 					<figcaption>
 						<h2><span>Street Style </span> луки</h2>
-						<p>Sadie never took her eyes off me. <br>She had a dark soul.</p>
+						<p>Универсальный образ на каждый день в любую погоду</p>
 						<a href="#">View more</a>
 					</figcaption>			
 				</figure>
@@ -32,7 +32,7 @@
 					<img src="../pics/sport-look/1-sport.jpg"/>
 					<figcaption>
 						<h2><span>Спортивные </span> луки </h2>
-						<p>Sadie never took her eyes off me. <br>She had a dark soul.</p>
+						<p>Выглядеть спортивно и стильно легко, загляни сюда</p>
 						<a href="#">View more</a>
 					</figcaption>			
 				</figure>
@@ -42,7 +42,7 @@
 					<img src="../pics/spring-summer/1-summer.jpg"/>
 					<figcaption>
 						<h2><span>Весна-</span>Лето</h2>
-						<p>Sadie never took her eyes off me. <br>She had a dark soul.</p>
+						<p>Пора радовать себя яркими красками</p>
 						<a href="#">View more</a>
 					</figcaption>			
 				</figure>
@@ -50,7 +50,7 @@
 					<img src="../pics/autumn-winter/2-autm.jpg"/>
 					<figcaption>
 						<h2><span>Осень-</span>Зима</h2>
-						<p>Sadie never took her eyes off me. <br>She had a dark soul.</p>
+						<p>Холод не препядствие стильному образу</p>
 						<a href="#">View more</a>
 					</figcaption>			
 				</figure>
@@ -69,7 +69,7 @@ export default {
 .prodTitle {
 	text-align: center;
 	margin-top: 30px;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-weight: 700
 }
 .grid {
@@ -169,7 +169,7 @@ figure.effect-sadie figcaption::before {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: -webkit-linear-gradient(top, rgba(72,76,97,0) 0%, rgba(72,76,97,0.8) 75%);
+	background: -webkit-linear-gradient(top, rgba(57, 62, 90, 0) 0%, rgba(72,76,97,0.8) 75%);
 	background: linear-gradient(to bottom, rgba(72,76,97,0) 0%, rgba(72,76,97,0.8) 75%);
 	content: '';
 	opacity: 0;
@@ -182,11 +182,12 @@ figure.effect-sadie h2 {
 	top: 50%;
 	left: 0;
 	width: 100%;
-	color: #484c61;
+	color: pink;
 	-webkit-transition: -webkit-transform 0.35s, color 0.35s;
 	transition: transform 0.35s, color 0.35s;
 	-webkit-transform: translate3d(0,-50%,0);
 	transform: translate3d(0,-50%,0);
+	font-family: 'Montserrat', sans-serif;
 }
 
 figure.effect-sadie figcaption::before,
@@ -204,12 +205,15 @@ figure.effect-sadie p {
 	opacity: 0;
 	-webkit-transform: translate3d(0,10px,0);
 	transform: translate3d(0,10px,0);
+	
 }
 
 figure.effect-sadie:hover h2 {
-	color: #fff;
+	color: palevioletred;
 	-webkit-transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
 	transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
+	font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 figure.effect-sadie:hover figcaption::before ,
@@ -217,5 +221,6 @@ figure.effect-sadie:hover p {
 	opacity: 1;
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
+	font-family: 'Montserrat', sans-serif;
 }
 </style>

@@ -1,19 +1,29 @@
 <template>
-    <div id="show_shops">
-        <h1>Магазины-партнеры</h1>
-        <div class="container-fluid">
-            <div v-for="(photo, index) in photos" v-bind:key="index" class="card">
-                <img :src="photo.thumbnailUrl">
-                {{ photo.title}}
-            </div>
-        </div>   
+    <div>
+        <Header />
+        <div id="show_shops">
+       
+            <h1 class="prodTitle">Магазины-партнеры</h1>
+            <div class="container-fluid">
+                <div v-for="(photo, index) in photos" v-bind:key="index" class="card">
+                    <img :src="photo.thumbnailUrl">
+                    {{ photo.title}}
+                </div>
+            </div>   
+        </div>
     </div>
+     
+    
+    
 </template>
 
 <script>
+import Header from '../components/header/Header'
 export default {
     name: 'shops',
-   
+   components: {
+       Header
+   },
 
     data() {
         return {
@@ -30,6 +40,9 @@ export default {
 </script>
 
 <style>
+#show_shops {
+    padding-top: 100px;
+}
       .container-fluid {
     display: flex;
     justify-content: flex-start;

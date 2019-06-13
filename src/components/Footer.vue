@@ -13,11 +13,11 @@
 
         </div>
         <div class="widjets">
-          <ul>
-            <li><a href="info.html" class="info-link">Контакты</a></li>
-            <li><a href="info.html" class="info-link">Безопасность</a> </li>
-            <li><a href="rules.html" class="info-link">Правила пользование</a></li>            
-          </ul>
+
+            <div><a href="info.html" class="info-link">Контакты</a></div>
+            <div><a href="info.html" class="info-link">Безопасность</a> </div>
+            <div><a href="rules.html" class="info-link">Правила пользование</a></div>            
+
         </div>
         
       </div>
@@ -59,13 +59,13 @@ export default {
 .bottom {
   border-top: 1px solid white;
   font-size: 20px;
-  /* font-family: Philosopher-Bold; */
+  font-family: Philosopher-Bold;
   font-weight: bold;
   text-transform: uppercase;
-  padding: 30px 0 30px;
-  margin: 40px 0 0 0;
+  padding-top: 50px;
   text-align: center;
   color: white;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .info {
@@ -80,7 +80,7 @@ export default {
 
 .small {
     margin-left: 100px;
-    font-family: Philosopher-Regular;
+   font-family: 'Montserrat', sans-serif;
 }
 
 .top {
@@ -94,6 +94,7 @@ export default {
 
 .widjets {
   list-style: none;
+  display: block
 }
 
 .info-link {
@@ -101,17 +102,17 @@ export default {
   text-transform: uppercase;
   font-size: 16px;
   list-style: none;
-  font-family: Philosopher-Regular;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .info-link:hover {
-  color: #B0C4DE;
+  color: palevioletred;
   text-decoration: none;
 }
 
 .navbar-brand {
   color: white;
-  /* font-family: Risque-Regular; */
+ font-family: 'Montserrat', sans-serif;
   font-size: 24px;
 }
 
@@ -141,7 +142,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  /* font-family: Philosopher-Regular; */
+  font-family: 'Montserrat', sans-serif;
   background-color: #F8F8FF;
   height: 100%;
   overflow-y: scroll;

@@ -1,7 +1,7 @@
 <template>
 <div class="login-page">
       <form @submit.prevent='signIn' class="login-form">
-        <h1 class="logo-name">Создайте профиль своего магазина у нас!</h1>
+        <h1 class="log-name">Создайте профиль своего магазина у нас!</h1>
         <input name="login" placeholder="Логин" v-model="login" class="login-form-input">
         <input name="name" placeholder="Название магазина" v-model="name" class="login-form-input">
          <input type="tel" placeholder="Номер телефона вашего магазина" v-model="contact" class="login-form-input">
@@ -78,15 +78,15 @@ export default {
     align-items: center;
     justify-content: space-around;
     border-radius: 15px;
-    font-family:'Lato', sans-serif;
+    font-family:'Montserrat', sans-serif;
     
   }
-    .logo-name {
+    .log-name {
     margin-bottom: 20px;
     font-size: 30px;
     color: white;
     padding-left: 11%;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
      text-shadow: 0px 4px 10px rgba(0, 0, 0, 1)
 

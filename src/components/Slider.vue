@@ -88,12 +88,12 @@ import img1 from "../pics/slider/looking.jpg"
 </script>
 <style lang="sass">
   .slideText 
-    font-family: Calibri
-    font-size: 40px
-    font-weight: 90
-    text-shadow: 4px 6px 15px rgba(0, 0, 1, 2)
+    font-family: 'Montserrat', sans-serif
+    font-size: 30px
+    font-weight: 900
+    text-shadow: 4px 6px 15px rgba(0, 0, 1, 100)
     color: white
-    background-color: rgba(51, 17, 51, .2)
+    background-color: rgba(51, 17, 0, .2)
     
     
 

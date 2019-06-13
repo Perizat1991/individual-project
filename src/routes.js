@@ -10,6 +10,7 @@ import SignUp from './Pages/SignUp'
 import LoginPage from './Pages/LoginPage'
 import Shops from './Pages/Shops'
 import ImageLoad from './components/ImageLoad'
+import Woman from './Pages/Woman'
 Vue.use(VueAxios, axios)
 
 Vue.use(Router);
@@ -45,6 +46,11 @@ export default new Router({
             path: '/imgload',
             name: 'imageLoad',
             component: ImageLoad
+        },
+        {
+            path: '/woman',
+            name: 'woman',
+            component: Woman
         }
     ]
 })
