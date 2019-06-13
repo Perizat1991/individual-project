@@ -5,7 +5,7 @@
        
             <h1 class="prodTitle">Магазины-партнеры</h1>
             <div class="container-fluid">
-                <div v-for="(shop, index) in shops" v-bind:key="index" class="col-lg-3 card">
+                <div v-for="(shop, index) in shops" v-bind:key="index" class="col-lg-6 card">
                     <img :src="shop.image">
                    {{ shop.name}}
                 </div>
