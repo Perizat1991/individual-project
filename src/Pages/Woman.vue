@@ -30,7 +30,7 @@
                         </div>
                     </b-card-text>
                         <div style="display: flex; justify-content:space-between">
-                            <a href="#" class="btn btn-danger">В магазин</a>
+                            <router-link to="/admin" class="btn btn-danger">В магазин</router-link>
                         </div>
                     </b-card>
                     <b-card
@@ -53,7 +53,7 @@
                         </div>
                     </b-card-text>
                         <div style="display: flex; justify-content:space-between">
-                            <a href="#" class="btn btn-danger">В магазин</a>
+                           <router-link to="/admin" class="btn btn-danger">В магазин</router-link>
                         </div>
                     </b-card>
                     <b-card
@@ -76,7 +76,7 @@
                         </div>
                     </b-card-text>
                         <div style="display: flex; justify-content:space-between">
-                            <a href="#" class="btn btn-danger">В магазин</a>
+                            <router-link to="/admin" class="btn btn-danger">В магазин</router-link>
                         </div>
                     </b-card>
                     <b-card
@@ -99,7 +99,7 @@
                         </div>
                     </b-card-text>
                         <div style="display: flex; justify-content:space-between">
-                            <a href="#" class="btn btn-danger">В магазин</a>
+                            <router-link to="/admin" class="btn btn-danger">В магазин</router-link>
                         </div>
                     </b-card>
                     <b-card
@@ -122,7 +122,7 @@
                         </div>
                     </b-card-text>
                         <div style="display: flex; justify-content:space-between">
-                            <a href="#" class="btn btn-danger">В магазин</a>
+                            <router-link to="/admin" class="btn btn-danger">В магазин</router-link>
                         </div>
                     </b-card>
                     <b-card
@@ -145,7 +145,7 @@
                         </div>
                     </b-card-text>
                         <div style="display: flex; justify-content:space-between">
-                            <a href="#" class="btn btn-danger">В магазин</a>
+                            <router-link to="/admin" class="btn btn-danger">В магазин</router-link>
                         </div>
                     </b-card>
                 </div>
@@ -202,7 +202,7 @@ body {
 	z-index: 10;
 	right: 40px;
     margin-bottom: 20px;
-    
+
 }
 a {
     list-style: none;
