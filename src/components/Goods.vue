@@ -197,7 +197,8 @@ export default {
   .available {
     font-family: 'Montserrat', sans-serif;
     margin-top: -5px;
-    font-weight: 900
+    font-weight: 900;
+    color: blue
   }
   .prices {
     display: flex;
@@ -211,12 +212,14 @@ export default {
   .size {
     margin-top: -10px;
     font-weight: bold;
-    font-family: 'Courier New', Courier, monospace
+    font-family: 'Courier New', Courier, monospace;
+    color: purple
   }
   .newPrice {
     margin-left: 60px;
     font-size: 18px;
     font-weight: 900;
+    color: purple;
   }
   .buttons {
       display: flex;
