@@ -179,7 +179,7 @@ export default {
     justify-content: center;
     margin-bottom: 40px;
     flex-wrap: wrap;
-    background: #ebebeb;
+    background: white;
   }
   /* .myTitle {
     font-size: 32px;
@@ -191,8 +191,9 @@ export default {
     color: blue
   } */
   .available {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Montserrat', sans-serif;
     margin-top: -5px;
+    font-weight: 900
   }
   .prices {
     display: flex;
@@ -222,7 +223,7 @@ export default {
     width: 100px
   }
   .col-lg-3 {
-    color: purple;
+    color: blue;
   }
 
 </style>

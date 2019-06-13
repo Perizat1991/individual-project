@@ -5,9 +5,9 @@
        
             <h1 class="prodTitle">Магазины-партнеры</h1>
             <div class="container-fluid">
-                <div v-for="(shop, index) in shops" v-bind:key="index" class="col-lg-6 card">
+                <div v-for="(shop, index) in shops" v-bind:key="index" class="col-lg-3 card">
                     <img :src="shop.image">
-                   {{ shop.name}}
+                   <h1>{{ shop.name}}</h1>
                 </div>
             </div>   
         </div>
@@ -42,10 +42,11 @@ export default {
 <style>
 #show_shops {
     padding-top: 100px;
+
 }
       .container-fluid {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     flex-wrap: wrap
     }
 </style>

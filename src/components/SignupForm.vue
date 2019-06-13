@@ -52,7 +52,7 @@ export default {
           login: '' + this.login,
           contact: '' + this.contact,
           password: '' + this.password
-        })
+        }).then(alert('Регистрация прошла успешно'))
     }
   }
 }
