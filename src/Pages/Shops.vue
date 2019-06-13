@@ -5,9 +5,9 @@
        
             <h1 class="prodTitle">Магазины-партнеры</h1>
             <div class="container-fluid">
-                <div v-for="(photo, index) in photos" v-bind:key="index" class="card">
-                    <img :src="photo.thumbnailUrl">
-                    {{ photo.title}}
+                <div v-for="(shop, index) in shops" v-bind:key="index" class="col-lg-3 card">
+                    <img :src="shop.image">
+                   {{ shop.name}}
                 </div>
             </div>   
         </div>
@@ -27,13 +27,13 @@ export default {
 
     data() {
         return {
-            photos: []
+            shops: []
         }
     },
     created() {
-        this.$http.get('https://jsonplaceholder.typicode.com/photos').then(data => {
+        this.$http.get('http://192.168.0.110:8080/api/shops').then(data => {
             console.log(data);
-            this.photos = data.data;
+            this.shops = data.data;
         })
     }
 }
