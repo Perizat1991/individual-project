@@ -5,13 +5,12 @@
             <div class="container">
                 <h2>Женские луки</h2>
                 <div class="site-breadcrumb">
-                    <a href="#">Главная</a> / 
+                    <router-link to="/">Главная</router-link> / 
                     <span>Женские луки</span>
                 </div>
                 <img src="../pics/icons/woman.png" alt="" class="cata-top-pic">
-                <div class="card_container">    
+                <div class="look_container">    
                     <b-card
-                    title="Street Style лук"
                     :img-src="street1"
                     img-alt="Image"
                     img-top
@@ -20,6 +19,7 @@
                     class="col-lg-3"
                     >
                     <b-card-text>
+                        <h3>Street Style лук</h3>
                         <p class="available">Размеры в наличии:</p> 
                         <p class="size">XS/S/M/L</p>
                         <p class="available">Размеры обуви в наличии:</p> 
@@ -34,15 +34,15 @@
                         </div>
                     </b-card>
                     <b-card
-                        title="Мужской лук"
-                        :img-src="man1"
+                         :img-src="man1"
                         img-alt="Image"
                         img-top
                         tag="article"
                         style="min-width: 20rem; min-height: 20rem;"
                         class="col-lg-3"
                         >
-                    <b-card-text>
+                        <b-card-text>
+                            <h3>Офисный лук</h3>
                         <p class="available">Размеры в наличии:</p> 
                         <p class="size">XS/S/M/L</p>
                         <p class="available">Размеры обуви в наличии:</p> 
@@ -57,7 +57,6 @@
                         </div>
                     </b-card>
                     <b-card
-                    title="Вечерний женский лук"
                     :img-src="night1"
                     img-alt="Image"
                     img-top
@@ -66,6 +65,7 @@
                     class="col-lg-3"
                     >
                     <b-card-text>
+                        <h3>Вечерний лук</h3>
                         <p class="available">Размеры в наличии:</p> 
                         <p class="size">XS/S/M/L</p>
                         <p class="available">Размеры обуви в наличии:</p> 
@@ -80,8 +80,7 @@
                         </div>
                     </b-card>
                     <b-card
-                    title="Офисный лук"
-                    :img-src="office1"
+                     :img-src="office1"
                     img-alt="Image"
                     img-top
                     tag="article"
@@ -89,6 +88,7 @@
                     class="col-lg-3"
                     >
                     <b-card-text>
+                        <h3>Офисный лук</h3>
                         <p class="available">Размеры в наличии:</p> 
                         <p class="size">XS/S/M/L</p>
                         <p class="available">Размеры обуви в наличии:</p> 
@@ -103,15 +103,15 @@
                         </div>
                     </b-card>
                     <b-card
-                    title="Офисный лук"
-                    :img-src="office1"
-                    img-alt="Image"
-                    img-top
-                    tag="article"
-                    style="min-width: 20rem; min-height: 20rem;"
-                    class="col-lg-3"
-                    >
-                    <b-card-text>
+                      :img-src="office1"
+                        img-alt="Image"
+                        img-top
+                        tag="article"
+                        style="min-width: 20rem; min-height: 20rem;"
+                        class="col-lg-3"
+                        >
+                        <b-card-text>
+                            <h3>Офисный лук</h3>
                         <p class="available">Размеры в наличии:</p> 
                         <p class="size">XS/S/M/L</p>
                         <p class="available">Размеры обуви в наличии:</p> 
@@ -126,8 +126,7 @@
                         </div>
                     </b-card>
                     <b-card
-                    title="Офисный лук"
-                    :img-src="office1"
+                      :img-src="office1"
                     img-alt="Image"
                     img-top
                     tag="article"
@@ -135,6 +134,7 @@
                     class="col-lg-3"
                     >
                     <b-card-text>
+                        <h3>Офисный лук</h3>
                         <p class="available">Размеры в наличии:</p> 
                         <p class="size">XS/S/M/L</p>
                         <p class="available">Размеры обуви в наличии:</p> 
@@ -206,6 +206,13 @@ body {
 }
 a {
     list-style: none;
+}
+.look_container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    background: #ebebeb;
 }
 
 </style>

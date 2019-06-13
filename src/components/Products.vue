@@ -7,7 +7,7 @@
 					<figcaption>
 						<h2><span>Вечерние </span> луки</h2>
 						<p>Выберите прекрасный вечерний образ</p>
-						<a href="#">View more</a>
+						<router-link to="/woman">View more</router-link>
 					</figcaption>			
 				</figure>
 				<figure class="effect-sadie">
@@ -15,7 +15,7 @@
 					<figcaption>
 						<h2><span>Офисные </span> луки</h2>
 						<p>Офисная одежда может быть гораздо интереснее чем кажется</p>
-						<a href="#">View more</a>
+						<router-link to="#">View more</router-link>
 					</figcaption>			
 				</figure>
 			</div> 
@@ -25,7 +25,7 @@
 					<figcaption>
 						<h2><span>Street Style </span> луки</h2>
 						<p>Универсальный образ на каждый день в любую погоду</p>
-						<a href="#">View more</a>
+						<router-link to="#">View more</router-link>
 					</figcaption>			
 				</figure>
 				<figure class="effect-sadie">
@@ -33,7 +33,7 @@
 					<figcaption>
 						<h2><span>Спортивные </span> луки </h2>
 						<p>Выглядеть спортивно и стильно легко, загляни сюда</p>
-						<a href="#">View more</a>
+						<router-link to="#">View more</router-link>
 					</figcaption>			
 				</figure>
 			</div>
@@ -43,7 +43,7 @@
 					<figcaption>
 						<h2><span>Весна-</span>Лето</h2>
 						<p>Пора радовать себя яркими красками</p>
-						<a href="#">View more</a>
+						<router-link to="#">View more</router-link>
 					</figcaption>			
 				</figure>
 				<figure class="effect-sadie">
@@ -51,7 +51,7 @@
 					<figcaption>
 						<h2><span>Осень-</span>Зима</h2>
 						<p>Холод не препядствие стильному образу</p>
-						<a href="#">View more</a>
+						<router-link to="#">View more</router-link>
 					</figcaption>			
 				</figure>
 			</div>
